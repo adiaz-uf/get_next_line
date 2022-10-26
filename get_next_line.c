@@ -72,11 +72,8 @@ static char *ft_read_buffer(int fd, char *stash)
             free(buff);
             return (0);
         }
-        if (bytes_readed != 0)
-        {
-            buff[bytes_readed] = '\0';
-            stash = ft_strjoin(stash, buff); 
-        } 
+        buff[bytes_readed] = '\0';
+        tash = ft_strjoin(stash, buff); 
     }
     free(buff);  
     return (stash);
