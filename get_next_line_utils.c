@@ -57,20 +57,3 @@ char	*ft_strjoin(char *s1, char *s2)
 	free(s1);
 	return (str);
 }
-
-void	*ft_calloc(size_t n, size_t size)
-{
-	size_t	i;
-	char	*b;
-
-	b = (char *)malloc(n * size);
-	if (!b)
-		return (0);
-	i = 0;
-	while (i < (n * size))
-	{
-		b[i] = '\0';
-		i++;
-	}
-	return ((void *)b);
-}
